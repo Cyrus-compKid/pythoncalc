@@ -11,6 +11,10 @@ Builder.load_file('calc.kv')
 class MyLayout(Widget):
     def clear(self):
         self.ids.calc_input.text = '0'
+
+    def percent(self):
+        prior = self.ids.calc_input.text
+        self.ids.calc_input.text = "I Dont Work yet"
      
     def remove(self):
         prior = self.ids.calc_input.text
